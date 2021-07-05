@@ -13,8 +13,8 @@ version: "3"
         - ./www:/var/www/html
    service2:
       build:
-        context: ./bin/service_one
-      container_name: 'service_one'
+        context: ./bin/service_two
+      container_name: 'service_two'
       restart: 'always'
       depends_on:
         - mysql
